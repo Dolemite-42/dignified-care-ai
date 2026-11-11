@@ -1,32 +1,38 @@
-# React + TypeScript + Vite
+# Weelove
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Care that protects dignity.** Weelove is an AI companion for caregivers. It aims to predict soiling events before they happen for neurodivergent children, the elderly, paraplegic patients and people experiencing incontinence. It also offers mental health support for parents of autistic children and menstrual care for women and girls with autism.
 
-Currently, two official plugins are available:
+> **Demo only.** This is for demo purposes only and no real data is recorded. The sample names, predictions and schools are fictional. There is no backend yet.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What's in the demo
 
-## React Compiler
+- Caregiver dashboard
+- Child profile form (with menstrual wellbeing questions for girls)
+- Predictions: toileting outlook and a menstrual tracker that surfaces periods starting soon
+- Menstrual wellbeing: cycle phase and upcoming periods
+- Support resources for parents and caregivers
+- Autism schools vetted and verified by Weelove (sample listings)
+- Caregiver wellbeing check-in and system feedback
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the Oxlint configuration
+Vite, React, TypeScript, Tailwind CSS and lucide-react.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Run locally
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Other scripts: `npm run build`, `npm run lint`.
+
+## License
+
+Code is released under the [Apache License 2.0](LICENSE).
+
+The Weelove name and logo (`src/assets/weelove-logo.png`) are not covered by that license; all rights are reserved.
+
+## Disclosure
+
+Parts of this code were written with the help of AI tools and reviewed by the maintainers.
